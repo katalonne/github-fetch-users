@@ -1,0 +1,43 @@
+{
+  "name": "github-fetch-users",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/core": "10.0.21",
+    "@emotion/styled": "10.0.17",
+    "axios": "^0.18.0",
+    "query-string": "6.8.3",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-paginate": "6.3.0",
+    "react-router-dom": "5.1.2",
+    "react-scripts": "3.0.1"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-app-rewired eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "babel-plugin-emotion": "10.0.21",
+    "babel-preset-react-app": "9.0.2",
+    "customize-cra": "0.8.0",
+    "react-app-rewired": "2.1.3"
+  }
+}
