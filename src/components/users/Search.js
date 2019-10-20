@@ -27,7 +27,7 @@ const Search = () => {
     clearTimeout(typingTimeout);
     const text = e.target.value || ''
     typingTimeout = setTimeout(() => {
-      text ? githubContext.searchUsers(text): githubContext.clearUsers()
+      text && githubContext.clearUsers()
       text ? history.push(`/?username=${text}&page=1`) : history.push(`/`);
     }, 475)
   }

@@ -52,7 +52,14 @@ const GithubState = props => {
     } catch ({response}) {
       res = response
     }
-    const pages = res.status < 300 ? Math.ceil(res.data.total_count / perPage) : 0
+
+    const statusOK = res.status < 300
+
+    const pages = statusOK ? Math.ceil(res.data.total_count / perPage) : 0
+
+    if (statusOK && res.data.items.length === 0) {
+      res.data.message = `No results found for: ${text}`
+    }
 
     dispatch({
       type: SEARCH_USERS,
