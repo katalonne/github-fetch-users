@@ -10,7 +10,7 @@
 - [react-router-dom](https://github.com/ReactTraining/react-router)
 - [axios](https://github.com/axios/axios) - HTTP client
 - [Emotion](https://emotion.sh/) - CSS in JS
-- [react-remarkable] For About page
+- [react-remarkable](https://github.com/acdlite/react-remarkable) For rendering markdown on About page
 - CSS3
 
 ## Getting Started
