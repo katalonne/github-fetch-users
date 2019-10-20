@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import ReactMarkdown from 'react-remarkable'
+import md from '../../../README.md';
 
 const About = () => {
+  const [markdown, setMarkdown] = useState('');
+
+  useEffect(() => {
+    fetch(md).then((response) => response.text()).then((text) => {
+      setMarkdown(text)
+    })
+  },[]);
+
   return (
     <div className="react-transition swipe-right">
-      <h1>About This App</h1>
-      <p>App to search Github users</p>
-      <p>Version: 1.0.0</p>
+      <ReactMarkdown source={markdown} />
     </div>
   );
 };

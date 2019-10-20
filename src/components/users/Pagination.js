@@ -95,7 +95,7 @@ function scrollToTop(scrollDuration) {
   let   scrollCount = 0,
         scrollMargin,
         scrollInterval = setInterval( function() {
-          if ( window.scrollY != 0 ) {
+          if ( window.scrollY !== 0 ) {
             scrollCount = scrollCount + 1;  
             scrollMargin = cosParameter - cosParameter * Math.cos( scrollCount * scrollStep );
             window.scrollTo( 0, ( scrollHeight - scrollMargin ) );

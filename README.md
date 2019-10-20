@@ -1,4 +1,4 @@
-<h1 style="text-align: center;" markdown="1">Github Fetch Users App.</h1>
+# Github Fetch Users App
 
 > React app to search Github Users. This app uses the Context API along with the useContext and useReducer hooks for state management.
 
@@ -10,6 +10,7 @@
 - [react-router-dom](https://github.com/ReactTraining/react-router)
 - [axios](https://github.com/axios/axios) - HTTP client
 - [Emotion](https://emotion.sh/) - CSS in JS
+- [react-remarkable] For About page
 - CSS3
 
 ## Getting Started
